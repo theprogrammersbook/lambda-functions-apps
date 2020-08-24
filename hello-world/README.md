@@ -47,7 +47,7 @@ def hello(event, context):
     return "hello - world"
 
 ```
-### Step 2: run : sls deploy function -f hello  
+### Step 2: run :  sls deploy function -f hello  
 Now ,sls will deploy only the funciton.
 ### Step 3: run : sls invoke -f hello -l 
 ## To remove the lamba funcitons (removes the function and logs from CloudWatch)
