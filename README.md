@@ -14,6 +14,13 @@ sudo apt-get install npm
 export AWS_ACCESS_KEY_ID=XXXX
 export AWS_SECRET_ACCESS_KEY=yyyyy
 
+Or
+
+serverless config credentials --provider aws --key XXX --secret YYY --profile serverless-admin
+
+
+default region : us-east-1
+
 
 ## To create Python AWS template 
 sls create --template aws-python

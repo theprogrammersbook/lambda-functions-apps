@@ -1,0 +1,11 @@
+{
+  "name": "restapi-lambda-nodejs",
+  "version": "1.0.0",
+  "description": "Serverless CRUD service exposing a REST HTTP Interface",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "uuid": "^2.0.3"
+  }
+}
