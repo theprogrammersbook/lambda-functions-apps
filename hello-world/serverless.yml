@@ -1,0 +1,12 @@
+
+service: hello-world
+
+provider:
+  name: aws
+  runtime: python2.7
+  prifile: serverless-admin
+  region: us-east-1
+
+functions:
+  hello:
+    handler: handler.hello
