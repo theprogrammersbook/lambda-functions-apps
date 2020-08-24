@@ -1,4 +1,4 @@
 
 def hello(event, context):
-    print("hi")
+    print("Hi ")
     return "hello - world"
