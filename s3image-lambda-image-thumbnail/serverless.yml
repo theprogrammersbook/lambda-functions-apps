@@ -11,7 +11,7 @@
 #
 # Happy Coding!
 
-service: python-s3-thumbnail
+service: python-s3-thumbnail-code
 
 # You can pin your service to only deploy with a specific Serverless version
 # Check out our docs for more details
@@ -33,7 +33,7 @@ provider:
      THUMBNAIL_SIZE: "128"
 
 custom:
-  bucket: programmers-s3-thumbnail-generator
+  bucket: pro-nag-s3-thumbnail-generator
   pythonRequirements:
    dockerizePip: true
 
@@ -44,6 +44,8 @@ functions:
       - s3:
           bucket: ${self:custom.bucket}
           event: s3:ObjectCreated:*
+          maximumRetryAttempts: 1
+          maximumRecordAgeInSeconds: 80
           rules:
             - suffix: .png
 

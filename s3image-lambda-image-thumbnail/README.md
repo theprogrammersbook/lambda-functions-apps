@@ -20,3 +20,10 @@ then
 
 ### Now deploy the app
 sls deploy -v
+
+### Code is added to change the max retry mechanism 
+```
+maximumRetryAttempts: 1
+maximumRecordAgeInSeconds: 80
+```
+          

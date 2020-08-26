@@ -1,5 +1,5 @@
 import boto3
-import cStringIO
+import StringIO
 from PIL import Image, ImageOps
 import os
 
