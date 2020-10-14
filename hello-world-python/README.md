@@ -2,7 +2,7 @@
 sls deploy -v 
 
 ### Check in AWS Console 
-Got to AWS Console and check in the lambada functions Node: region is us-east-1
+Got to AWS Console and check in the lambada functions Node: region is us-east-1 (region is important)
 
 ### Running in Our Console
  - Here -f is function 
@@ -27,7 +27,7 @@ def hello(event, context):
 
 ```
 ### Step 2: run  sls deploy -v 
-### Step 3: run sls invoke -f hello -l 
+### Step 3: run sls invoke -f hello -l  (we have already deployed so that now , invoking)
 nagaraju@nagaraju:~/Technology/Repository/theprogrammersbook/lambda-functions-apps/hello-world$ sls invoke -f hello -l
 "hello - world"
 --------------------------------------------------------------------
@@ -50,6 +50,14 @@ def hello(event, context):
 ### Step 2: run :  sls deploy function -f hello  
 Now ,sls will deploy only the funciton.
 ### Step 3: run : sls invoke -f hello -l 
-## To remove the lamba funcitons (removes the function and logs from CloudWatch)
+## To remove the lamba funcitons
+ (removes the function and logs from CloudWatch, removes all the functions)
 sls remove 
+
+@justin.m.chase suggested:
+
+Simply remove the function in serverless.yml, then run full deploy
+
+sls deploy
+the function is removed (Lambda + API Gateway). Perfecto!
 

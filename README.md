@@ -19,7 +19,7 @@ Or
 serverless config credentials --provider aws --key XXX --secret YYY --profile serverless-admin
 
 
-default region : us-east-1
+## default region : us-east-1
 
 
 ## To create Python AWS template 
